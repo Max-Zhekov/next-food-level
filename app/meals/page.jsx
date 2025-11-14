@@ -4,6 +4,7 @@ import s from "./page.module.css";
 import MealsGrid from "../components/Meals/MealsGrid";
 import { getMeals } from "@/lib/meals";
 import MealsLoadingPage from "./loading-out";
+import { Suspense } from "react";
 
 async function Meals() {
   const meals = await getMeals();
